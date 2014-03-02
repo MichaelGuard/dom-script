@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+#showDiv {
+visibility: hidden;
+}
+</style>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Mouse Over Me</div>
+
+<div id="showDiv">Hello</div>
+
+<script>
+function mOver(obj)
+{
+obj.innerHTML="Thank You"
+document.getElementById('showDiv').style.visibility='visible';
+}
+
+function mOut(obj)
+{
+obj.innerHTML="Mouse Over Me";
+document.getElementById('showDiv').style.visibility='hidden';
+}
+</script>
+
+</body>
+</html> 
